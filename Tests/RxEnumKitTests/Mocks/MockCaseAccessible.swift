@@ -16,4 +16,8 @@ enum MockEnum: CaseAccessible, Equatable {
     case anInt(Int)
     case anotherInt(Int)
     case namedInt(integer: Int)
+    
+    func debug() {
+        print(self)
+    }
 }
