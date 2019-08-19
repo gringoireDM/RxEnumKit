@@ -7,7 +7,7 @@ import EnumKit
 
 final class CaptureTests: XCTestCase {
     let disposeBag = DisposeBag()
-    func testThatItCanCaptureAnonymousAssociatedValueEvents() {
+    func testItCanCaptureAnonymousAssociatedValueEvents() {
         let scheduler = TestScheduler(initialClock: 0)
         let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
             .next(100, MockEnum.withAnonymousAssociatedValue("100")),
@@ -33,7 +33,7 @@ final class CaptureTests: XCTestCase {
         XCTAssertEqual(results.events, expected)
     }
     
-    func testThatItCanCaptureNamedAssociatedValueEvents() {
+    func testItCanCaptureNamedAssociatedValueEvents() {
         let scheduler = TestScheduler(initialClock: 0)
         let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
             .next(100, MockEnum.withNamedAssociatedValue(value: "100")),
@@ -58,7 +58,7 @@ final class CaptureTests: XCTestCase {
         XCTAssertEqual(results.events, expected)
     }
     
-    func testThatItCanCaptureNoAssociatedValueEvents() {
+    func testItCanCaptureNoAssociatedValueEvents() {
         let scheduler = TestScheduler(initialClock: 0)
         let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
             .next(100, MockEnum.noAssociatedValue),

@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3221D5B3809C3F088A39AEF5 /* Pods_RxEnumKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64108DF9041BE5FD0CB6978D /* Pods_RxEnumKitTests.framework */; };
+		504954CF230B55C4000ED3F5 /* RxEnumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 504954CC230B5507000ED3F5 /* RxEnumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		504954D3230B55EC000ED3F5 /* ObservableType+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954D2230B55EC000ED3F5 /* ObservableType+CaseAccessible.swift */; };
+		504954DD230B5773000ED3F5 /* RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504954C0230B5488000ED3F5 /* RxEnumKit.framework */; };
+		504954E9230B5ACD000ED3F5 /* MockCaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954E4230B5ACD000ED3F5 /* MockCaseAccessible.swift */; };
+		504954EA230B5ACD000ED3F5 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954E5230B5ACD000ED3F5 /* MapTests.swift */; };
+		504954EB230B5ACD000ED3F5 /* ExcludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954E6230B5ACD000ED3F5 /* ExcludeTests.swift */; };
+		504954EC230B5ACD000ED3F5 /* CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954E7230B5ACD000ED3F5 /* CaptureTests.swift */; };
+		504954ED230B5ACD000ED3F5 /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504954E8230B5ACD000ED3F5 /* FilterTests.swift */; };
+		9FAD59636A51ECE1D7E037DD /* Pods_RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A948ECDDBC3FA8623C8E3BA5 /* Pods_RxEnumKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504954DE230B5773000ED3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504954B7230B5488000ED3F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504954BF230B5488000ED3F5;
+			remoteInfo = RxEnumKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		124C66F85F1BEB73335D7BF2 /* Pods-RxEnumKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		504954C0230B5488000ED3F5 /* RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504954CB230B5507000ED3F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504954CC230B5507000ED3F5 /* RxEnumKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxEnumKit.h; sourceTree = "<group>"; };
+		504954D2230B55EC000ED3F5 /* ObservableType+CaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+CaseAccessible.swift"; sourceTree = "<group>"; };
+		504954D8230B5773000ED3F5 /* RxEnumKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxEnumKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		504954DC230B5773000ED3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504954E4230B5ACD000ED3F5 /* MockCaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCaseAccessible.swift; sourceTree = "<group>"; };
+		504954E5230B5ACD000ED3F5 /* MapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTests.swift; path = Tests/RxEnumKitTests/MapTests.swift; sourceTree = SOURCE_ROOT; };
+		504954E6230B5ACD000ED3F5 /* ExcludeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcludeTests.swift; path = Tests/RxEnumKitTests/ExcludeTests.swift; sourceTree = SOURCE_ROOT; };
+		504954E7230B5ACD000ED3F5 /* CaptureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureTests.swift; path = Tests/RxEnumKitTests/CaptureTests.swift; sourceTree = SOURCE_ROOT; };
+		504954E8230B5ACD000ED3F5 /* FilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterTests.swift; path = Tests/RxEnumKitTests/FilterTests.swift; sourceTree = SOURCE_ROOT; };
+		61EB7F7438D2BE038BD90DC3 /* Pods-RxEnumKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.release.xcconfig"; sourceTree = "<group>"; };
+		64108DF9041BE5FD0CB6978D /* Pods_RxEnumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A948ECDDBC3FA8623C8E3BA5 /* Pods_RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9953D0E462501182938C451 /* Pods-RxEnumKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CD37A5A400E622D00669A5F7 /* Pods-RxEnumKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504954BD230B5488000ED3F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAD59636A51ECE1D7E037DD /* Pods_RxEnumKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504954D5230B5773000ED3F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504954DD230B5773000ED3F5 /* RxEnumKit.framework in Frameworks */,
+				3221D5B3809C3F088A39AEF5 /* Pods_RxEnumKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504954B6230B5488000ED3F5 = {
+			isa = PBXGroup;
+			children = (
+				504954CC230B5507000ED3F5 /* RxEnumKit.h */,
+				504954CB230B5507000ED3F5 /* Info.plist */,
+				504954D0230B55EC000ED3F5 /* Sources */,
+				504954D9230B5773000ED3F5 /* RxEnumKitTests */,
+				504954C1230B5488000ED3F5 /* Products */,
+				91879ED8DEB0BE02321800B4 /* Pods */,
+				6DE94C56BFC8C598D2FE86E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		504954C1230B5488000ED3F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504954C0230B5488000ED3F5 /* RxEnumKit.framework */,
+				504954D8230B5773000ED3F5 /* RxEnumKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504954D0230B55EC000ED3F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				504954D1230B55EC000ED3F5 /* RxEnumKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		504954D1230B55EC000ED3F5 /* RxEnumKit */ = {
+			isa = PBXGroup;
+			children = (
+				504954D2230B55EC000ED3F5 /* ObservableType+CaseAccessible.swift */,
+			);
+			path = RxEnumKit;
+			sourceTree = "<group>";
+		};
+		504954D9230B5773000ED3F5 /* RxEnumKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				504954E3230B5ACD000ED3F5 /* Mocks */,
+				504954E7230B5ACD000ED3F5 /* CaptureTests.swift */,
+				504954E6230B5ACD000ED3F5 /* ExcludeTests.swift */,
+				504954E8230B5ACD000ED3F5 /* FilterTests.swift */,
+				504954E5230B5ACD000ED3F5 /* MapTests.swift */,
+				504954DC230B5773000ED3F5 /* Info.plist */,
+			);
+			path = RxEnumKitTests;
+			sourceTree = "<group>";
+		};
+		504954E3230B5ACD000ED3F5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				504954E4230B5ACD000ED3F5 /* MockCaseAccessible.swift */,
+			);
+			name = Mocks;
+			path = Tests/RxEnumKitTests/Mocks;
+			sourceTree = SOURCE_ROOT;
+		};
+		6DE94C56BFC8C598D2FE86E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A948ECDDBC3FA8623C8E3BA5 /* Pods_RxEnumKit.framework */,
+				64108DF9041BE5FD0CB6978D /* Pods_RxEnumKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91879ED8DEB0BE02321800B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9953D0E462501182938C451 /* Pods-RxEnumKit.debug.xcconfig */,
+				61EB7F7438D2BE038BD90DC3 /* Pods-RxEnumKit.release.xcconfig */,
+				124C66F85F1BEB73335D7BF2 /* Pods-RxEnumKitTests.debug.xcconfig */,
+				CD37A5A400E622D00669A5F7 /* Pods-RxEnumKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		504954BB230B5488000ED3F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504954CF230B55C4000ED3F5 /* RxEnumKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		504954BF230B5488000ED3F5 /* RxEnumKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504954C8230B5488000ED3F5 /* Build configuration list for PBXNativeTarget "RxEnumKit" */;
+			buildPhases = (
+				065FA80A57AA42256CE97883 /* [CP] Check Pods Manifest.lock */,
+				504954BB230B5488000ED3F5 /* Headers */,
+				504954BC230B5488000ED3F5 /* Sources */,
+				504954BD230B5488000ED3F5 /* Frameworks */,
+				504954BE230B5488000ED3F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxEnumKit;
+			productName = RxEnumKit;
+			productReference = 504954C0230B5488000ED3F5 /* RxEnumKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		504954D7230B5773000ED3F5 /* RxEnumKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504954E2230B5773000ED3F5 /* Build configuration list for PBXNativeTarget "RxEnumKitTests" */;
+			buildPhases = (
+				65C472768895519F065EE171 /* [CP] Check Pods Manifest.lock */,
+				504954D4230B5773000ED3F5 /* Sources */,
+				504954D5230B5773000ED3F5 /* Frameworks */,
+				504954D6230B5773000ED3F5 /* Resources */,
+				4C504026BE75F6582AE25F4C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504954DF230B5773000ED3F5 /* PBXTargetDependency */,
+			);
+			name = RxEnumKitTests;
+			productName = RxEnumKitTests;
+			productReference = 504954D8230B5773000ED3F5 /* RxEnumKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504954B7230B5488000ED3F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "MERLin Tech";
+				TargetAttributes = {
+					504954BF230B5488000ED3F5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					504954D7230B5773000ED3F5 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 504954BA230B5488000ED3F5 /* Build configuration list for PBXProject "RxEnumKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 504954B6230B5488000ED3F5;
+			productRefGroup = 504954C1230B5488000ED3F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504954BF230B5488000ED3F5 /* RxEnumKit */,
+				504954D7230B5773000ED3F5 /* RxEnumKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504954BE230B5488000ED3F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504954D6230B5773000ED3F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065FA80A57AA42256CE97883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxEnumKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C504026BE75F6582AE25F4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65C472768895519F065EE171 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxEnumKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504954BC230B5488000ED3F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504954D3230B55EC000ED3F5 /* ObservableType+CaseAccessible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504954D4230B5773000ED3F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504954ED230B5ACD000ED3F5 /* FilterTests.swift in Sources */,
+				504954EC230B5ACD000ED3F5 /* CaptureTests.swift in Sources */,
+				504954EB230B5ACD000ED3F5 /* ExcludeTests.swift in Sources */,
+				504954EA230B5ACD000ED3F5 /* MapTests.swift in Sources */,
+				504954E9230B5ACD000ED3F5 /* MockCaseAccessible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		504954DF230B5773000ED3F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504954BF230B5488000ED3F5 /* RxEnumKit */;
+			targetProxy = 504954DE230B5773000ED3F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		504954C6230B5488000ED3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		504954C7230B5488000ED3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		504954C9230B5488000ED3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9953D0E462501182938C451 /* Pods-RxEnumKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZJ8CN8P2Z5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lanuovaera.RxEnumKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504954CA230B5488000ED3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61EB7F7438D2BE038BD90DC3 /* Pods-RxEnumKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZJ8CN8P2Z5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lanuovaera.RxEnumKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		504954E0230B5773000ED3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 124C66F85F1BEB73335D7BF2 /* Pods-RxEnumKitTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ8CN8P2Z5;
+				INFOPLIST_FILE = RxEnumKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lanuovaera.RxEnumKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504954E1230B5773000ED3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD37A5A400E622D00669A5F7 /* Pods-RxEnumKitTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ8CN8P2Z5;
+				INFOPLIST_FILE = RxEnumKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.lanuovaera.RxEnumKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504954BA230B5488000ED3F5 /* Build configuration list for PBXProject "RxEnumKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504954C6230B5488000ED3F5 /* Debug */,
+				504954C7230B5488000ED3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504954C8230B5488000ED3F5 /* Build configuration list for PBXNativeTarget "RxEnumKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504954C9230B5488000ED3F5 /* Debug */,
+				504954CA230B5488000ED3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504954E2230B5773000ED3F5 /* Build configuration list for PBXNativeTarget "RxEnumKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504954E0230B5773000ED3F5 /* Debug */,
+				504954E1230B5773000ED3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504954B7230B5488000ED3F5 /* Project object */;
+}

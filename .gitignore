@@ -28,6 +28,8 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
+Pods/
+
 # Swift Package Manager
 .DS_Store
 /.build
