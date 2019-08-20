@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		501C2C1B230BDDC1003AFAA5 /* RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501C2C11230BDDC1003AFAA5 /* RxEnumKit.framework */; };
 		501C2C22230BDDC1003AFAA5 /* RxEnumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 501C2C14230BDDC1003AFAA5 /* RxEnumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		501C2C32230BE0CD003AFAA5 /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C2B230BE0CD003AFAA5 /* FilterTests.swift */; };
-		501C2C33230BE0CD003AFAA5 /* CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C2C230BE0CD003AFAA5 /* CaptureTests.swift */; };
-		501C2C34230BE0CD003AFAA5 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C2D230BE0CD003AFAA5 /* MapTests.swift */; };
-		501C2C35230BE0CD003AFAA5 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C2E230BE0CD003AFAA5 /* XCTestManifests.swift */; };
-		501C2C36230BE0CD003AFAA5 /* MockCaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C30230BE0CD003AFAA5 /* MockCaseAccessible.swift */; };
-		501C2C37230BE0CD003AFAA5 /* ExcludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C31230BE0CD003AFAA5 /* ExcludeTests.swift */; };
-		501C2C39230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C38230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift */; };
 		501C2C3D230BE406003AFAA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 501C2C3C230BE406003AFAA5 /* README.md */; };
+		5024A6FF230C99D200F8E0A8 /* ObservableType+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A6FE230C99D200F8E0A8 /* ObservableType+CaseAccessible.swift */; };
+		5024A706230C9D0900F8E0A8 /* MockCaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A701230C9D0900F8E0A8 /* MockCaseAccessible.swift */; };
+		5024A707230C9D0900F8E0A8 /* CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A702230C9D0900F8E0A8 /* CaptureTests.swift */; };
+		5024A708230C9D0900F8E0A8 /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A703230C9D0900F8E0A8 /* FilterTests.swift */; };
+		5024A709230C9D0900F8E0A8 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A704230C9D0900F8E0A8 /* MapTests.swift */; };
+		5024A70A230C9D0900F8E0A8 /* ExcludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024A705230C9D0900F8E0A8 /* ExcludeTests.swift */; };
 		5659C894D32D09DC8318C309 /* Pods_RxEnumKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE9AE6AD09559FDF00823C2 /* Pods_RxEnumKitTests.framework */; };
 		7FA62275EA221FFB0E57EA1A /* Pods_RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3335B5390EBEDEEB7BCE58B /* Pods_RxEnumKit.framework */; };
 /* End PBXBuildFile section */
@@ -39,14 +38,13 @@
 		501C2C15230BDDC1003AFAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501C2C1A230BDDC1003AFAA5 /* RxEnumKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxEnumKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		501C2C21230BDDC1003AFAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		501C2C2B230BE0CD003AFAA5 /* FilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterTests.swift; path = Tests/RxEnumKitTests/FilterTests.swift; sourceTree = SOURCE_ROOT; };
-		501C2C2C230BE0CD003AFAA5 /* CaptureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureTests.swift; path = Tests/RxEnumKitTests/CaptureTests.swift; sourceTree = SOURCE_ROOT; };
-		501C2C2D230BE0CD003AFAA5 /* MapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTests.swift; path = Tests/RxEnumKitTests/MapTests.swift; sourceTree = SOURCE_ROOT; };
-		501C2C2E230BE0CD003AFAA5 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCTestManifests.swift; path = Tests/RxEnumKitTests/XCTestManifests.swift; sourceTree = SOURCE_ROOT; };
-		501C2C30230BE0CD003AFAA5 /* MockCaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCaseAccessible.swift; sourceTree = "<group>"; };
-		501C2C31230BE0CD003AFAA5 /* ExcludeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcludeTests.swift; path = Tests/RxEnumKitTests/ExcludeTests.swift; sourceTree = SOURCE_ROOT; };
-		501C2C38230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ObservableType+CaseAccessible.swift"; path = "Sources/RxEnumKit/ObservableType+CaseAccessible.swift"; sourceTree = SOURCE_ROOT; };
 		501C2C3C230BE406003AFAA5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5024A6FE230C99D200F8E0A8 /* ObservableType+CaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+CaseAccessible.swift"; sourceTree = "<group>"; };
+		5024A701230C9D0900F8E0A8 /* MockCaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCaseAccessible.swift; sourceTree = "<group>"; };
+		5024A702230C9D0900F8E0A8 /* CaptureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureTests.swift; sourceTree = "<group>"; };
+		5024A703230C9D0900F8E0A8 /* FilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTests.swift; sourceTree = "<group>"; };
+		5024A704230C9D0900F8E0A8 /* MapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTests.swift; sourceTree = "<group>"; };
+		5024A705230C9D0900F8E0A8 /* ExcludeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcludeTests.swift; sourceTree = "<group>"; };
 		7CE9AE6AD09559FDF00823C2 /* Pods_RxEnumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3335B5390EBEDEEB7BCE58B /* Pods_RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EA61933DF303F9B2A5BB1D /* Pods-RxEnumKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,8 +116,8 @@
 		501C2C13230BDDC1003AFAA5 /* RxEnumKit */ = {
 			isa = PBXGroup;
 			children = (
-				501C2C38230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift */,
 				501C2C14230BDDC1003AFAA5 /* RxEnumKit.h */,
+				5024A6FE230C99D200F8E0A8 /* ObservableType+CaseAccessible.swift */,
 				501C2C15230BDDC1003AFAA5 /* Info.plist */,
 			);
 			path = RxEnumKit;
@@ -128,25 +126,23 @@
 		501C2C1E230BDDC1003AFAA5 /* RxEnumKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				501C2C2F230BE0CD003AFAA5 /* Mocks */,
-				501C2C2C230BE0CD003AFAA5 /* CaptureTests.swift */,
-				501C2C31230BE0CD003AFAA5 /* ExcludeTests.swift */,
-				501C2C2B230BE0CD003AFAA5 /* FilterTests.swift */,
-				501C2C2D230BE0CD003AFAA5 /* MapTests.swift */,
-				501C2C2E230BE0CD003AFAA5 /* XCTestManifests.swift */,
+				5024A700230C9D0900F8E0A8 /* Mocks */,
+				5024A702230C9D0900F8E0A8 /* CaptureTests.swift */,
+				5024A705230C9D0900F8E0A8 /* ExcludeTests.swift */,
+				5024A703230C9D0900F8E0A8 /* FilterTests.swift */,
+				5024A704230C9D0900F8E0A8 /* MapTests.swift */,
 				501C2C21230BDDC1003AFAA5 /* Info.plist */,
 			);
 			path = RxEnumKitTests;
 			sourceTree = "<group>";
 		};
-		501C2C2F230BE0CD003AFAA5 /* Mocks */ = {
+		5024A700230C9D0900F8E0A8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				501C2C30230BE0CD003AFAA5 /* MockCaseAccessible.swift */,
+				5024A701230C9D0900F8E0A8 /* MockCaseAccessible.swift */,
 			);
-			name = Mocks;
-			path = Tests/RxEnumKitTests/Mocks;
-			sourceTree = SOURCE_ROOT;
+			path = Mocks;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -339,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501C2C39230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift in Sources */,
+				5024A6FF230C99D200F8E0A8 /* ObservableType+CaseAccessible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,12 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501C2C37230BE0CD003AFAA5 /* ExcludeTests.swift in Sources */,
-				501C2C33230BE0CD003AFAA5 /* CaptureTests.swift in Sources */,
-				501C2C36230BE0CD003AFAA5 /* MockCaseAccessible.swift in Sources */,
-				501C2C35230BE0CD003AFAA5 /* XCTestManifests.swift in Sources */,
-				501C2C32230BE0CD003AFAA5 /* FilterTests.swift in Sources */,
-				501C2C34230BE0CD003AFAA5 /* MapTests.swift in Sources */,
+				5024A707230C9D0900F8E0A8 /* CaptureTests.swift in Sources */,
+				5024A708230C9D0900F8E0A8 /* FilterTests.swift in Sources */,
+				5024A709230C9D0900F8E0A8 /* MapTests.swift in Sources */,
+				5024A70A230C9D0900F8E0A8 /* ExcludeTests.swift in Sources */,
+				5024A706230C9D0900F8E0A8 /* MockCaseAccessible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
