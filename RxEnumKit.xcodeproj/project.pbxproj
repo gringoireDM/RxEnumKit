@@ -16,6 +16,7 @@
 		501C2C36230BE0CD003AFAA5 /* MockCaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C30230BE0CD003AFAA5 /* MockCaseAccessible.swift */; };
 		501C2C37230BE0CD003AFAA5 /* ExcludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C31230BE0CD003AFAA5 /* ExcludeTests.swift */; };
 		501C2C39230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501C2C38230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift */; };
+		501C2C3D230BE406003AFAA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 501C2C3C230BE406003AFAA5 /* README.md */; };
 		5659C894D32D09DC8318C309 /* Pods_RxEnumKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE9AE6AD09559FDF00823C2 /* Pods_RxEnumKitTests.framework */; };
 		7FA62275EA221FFB0E57EA1A /* Pods_RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3335B5390EBEDEEB7BCE58B /* Pods_RxEnumKit.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		501C2C30230BE0CD003AFAA5 /* MockCaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCaseAccessible.swift; sourceTree = "<group>"; };
 		501C2C31230BE0CD003AFAA5 /* ExcludeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcludeTests.swift; path = Tests/RxEnumKitTests/ExcludeTests.swift; sourceTree = SOURCE_ROOT; };
 		501C2C38230BE0EC003AFAA5 /* ObservableType+CaseAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ObservableType+CaseAccessible.swift"; path = "Sources/RxEnumKit/ObservableType+CaseAccessible.swift"; sourceTree = SOURCE_ROOT; };
+		501C2C3C230BE406003AFAA5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7CE9AE6AD09559FDF00823C2 /* Pods_RxEnumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3335B5390EBEDEEB7BCE58B /* Pods_RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EA61933DF303F9B2A5BB1D /* Pods-RxEnumKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		501C2C07230BDDC1003AFAA5 = {
 			isa = PBXGroup;
 			children = (
+				501C2C3C230BE406003AFAA5 /* README.md */,
 				501C2C13230BDDC1003AFAA5 /* RxEnumKit */,
 				501C2C1E230BDDC1003AFAA5 /* RxEnumKitTests */,
 				501C2C12230BDDC1003AFAA5 /* Products */,
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501C2C3D230BE406003AFAA5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
