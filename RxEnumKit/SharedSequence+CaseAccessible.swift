@@ -36,4 +36,29 @@ public extension SharedSequence where Element: CaseAccessible {
             .compactMap { $0[case: pattern] }
             .asSharedSequence(onErrorRecover: { _ in .empty() })
     }
+    
+    func map<T>(case: Element, _ transform: @escaping () -> T) -> SharedSequence<SharingStrategy, T> {
+        return capture(case: `case`).map(transform)
+    }
+    
+    func map<AssociatedValue, T>(case pattern: @escaping (AssociatedValue) -> Element,
+                                 _ transfrom: @escaping (AssociatedValue) -> T) -> SharedSequence<SharingStrategy, T> {
+        return capture(case: pattern).map(transfrom)
+    }
+
+    func compactMap<T>(case: Element, _ transform: @escaping () -> T?) -> SharedSequence<SharingStrategy, T> {
+        return capture(case: `case`)
+            .asObservable()
+            .compactMap(transform)
+            .asSharedSequence(onErrorRecover: { _ in .empty() })
+    }
+    
+    func compactMap<AssociatedValue, T>(case pattern: @escaping (AssociatedValue) -> Element,
+                                        _ transform: @escaping (AssociatedValue) -> T?) -> SharedSequence<SharingStrategy, T> {
+        return capture(case: pattern)
+            .asObservable()
+            .compactMap(transform)
+            .asSharedSequence(onErrorRecover: { _ in .empty() })
+    }
+
 }
