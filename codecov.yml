@@ -1,0 +1,4 @@
+ignore:
+  - "./RxEnumKitTests/.*"
+  - "./Sources/.*"
+  - ".Tests/.*"

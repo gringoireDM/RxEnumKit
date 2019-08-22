@@ -2,7 +2,7 @@
 //  RxEnumKit.h
 //  RxEnumKit
 //
-//  Created by Giuseppe Lanza on 20/08/2019.
+//  Created by Giuseppe Lanza on 22/08/2019.
 //  Copyright © 2019 MERLin Tech. All rights reserved.
 //
 

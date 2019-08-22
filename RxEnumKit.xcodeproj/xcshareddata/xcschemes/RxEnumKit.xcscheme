@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "501C2C10230BDDC1003AFAA5"
+               BlueprintIdentifier = "5080EC42230E8CCD00D04927"
                BuildableName = "RxEnumKit.framework"
                BlueprintName = "RxEnumKit"
                ReferencedContainer = "container:RxEnumKit.xcodeproj">
@@ -24,15 +24,15 @@
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = ""
-      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "501C2C10230BDDC1003AFAA5"
+            BlueprintIdentifier = "5080EC42230E8CCD00D04927"
             BuildableName = "RxEnumKit.framework"
             BlueprintName = "RxEnumKit"
             ReferencedContainer = "container:RxEnumKit.xcodeproj">
@@ -43,7 +43,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "501C2C19230BDDC1003AFAA5"
+               BlueprintIdentifier = "5080EC4B230E8CCE00D04927"
                BuildableName = "RxEnumKitTests.xctest"
                BlueprintName = "RxEnumKitTests"
                ReferencedContainer = "container:RxEnumKit.xcodeproj">
@@ -53,7 +53,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "501C2C10230BDDC1003AFAA5"
+            BlueprintIdentifier = "5080EC42230E8CCD00D04927"
             BuildableName = "RxEnumKit.framework"
             BlueprintName = "RxEnumKit"
             ReferencedContainer = "container:RxEnumKit.xcodeproj">
@@ -75,7 +75,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "501C2C10230BDDC1003AFAA5"
+            BlueprintIdentifier = "5080EC42230E8CCD00D04927"
             BuildableName = "RxEnumKit.framework"
             BlueprintName = "RxEnumKit"
             ReferencedContainer = "container:RxEnumKit.xcodeproj">
@@ -93,7 +93,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "501C2C10230BDDC1003AFAA5"
+            BlueprintIdentifier = "5080EC42230E8CCD00D04927"
             BuildableName = "RxEnumKit.framework"
             BlueprintName = "RxEnumKit"
             ReferencedContainer = "container:RxEnumKit.xcodeproj">
