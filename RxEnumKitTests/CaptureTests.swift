@@ -1,5 +1,6 @@
 import XCTest
 import RxSwift
+import RxCocoa
 import RxTest
 import EnumKit
 
@@ -84,4 +85,86 @@ final class CaptureTests: XCTestCase {
         
         XCTAssertEqual(results.events, expected)
     }
+    
+    func testItCanCaptureAnonymousAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
+            .next(100, MockEnum.withAnonymousAssociatedValue("100")),
+            .next(200, MockEnum.withAnonymousAssociatedValue("200")),
+            .next(300, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(400, MockEnum.withAnonymousAssociatedValue("400")),
+            .next(300, MockEnum.noAssociatedValue)
+            ])
+        let results = scheduler.createObserver(String.self)
+        
+        events.asDriver(onErrorRecover: { _ in .empty() })
+            .capture(case: MockEnum.withAnonymousAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(100, "100"),
+            .next(200, "200"),
+            .next(400, "400")
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanCaptureNamedAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
+            .next(100, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(200, MockEnum.withAnonymousAssociatedValue("200")),
+            .next(300, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(400, MockEnum.withAnonymousAssociatedValue("400")),
+            .next(300, MockEnum.noAssociatedValue)
+            ])
+        let results = scheduler.createObserver(String.self)
+        
+        events.asDriver(onErrorRecover: { _ in .empty() })
+            .capture(case: MockEnum.withNamedAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(100, "100"),
+            .next(300, "100")
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanCaptureNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
+            .next(100, MockEnum.noAssociatedValue),
+            .next(200, MockEnum.noAssociatedValue),
+            .next(300, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(400, MockEnum.withAnonymousAssociatedValue("400")),
+            .next(300, MockEnum.noAssociatedValue)
+            ])
+        let results = scheduler.createObserver(String.self)
+        
+        events.asDriver(onErrorRecover: { _ in .empty() })
+            .capture(case: MockEnum.noAssociatedValue)
+            .map { _ in "" }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(100, ""),
+            .next(200, ""),
+            .next(300, "")
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+
 }

@@ -81,4 +81,66 @@ class FilterTests: XCTestCase {
         
         XCTAssertEqual(results.events, expected)
     }
+    
+    func testItCanFilterAnonymousEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(MockEnum.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .filter(case: MockEnum.withAnonymousAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<MockEnum>>] = [
+            .next(100, .withAnonymousAssociatedValue("100")),
+            .next(200, .withAnonymousAssociatedValue("200")),
+            .next(400, .withAnonymousAssociatedValue("400"))
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanFilterNamedEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(MockEnum.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .filter(case: MockEnum.withNamedAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<MockEnum>>] = [
+            .next(300, .withNamedAssociatedValue(value: "100"))
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanFilterNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(MockEnum.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .filter(case: MockEnum.noAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<MockEnum>>] = [
+            .next(300, .noAssociatedValue)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
 }

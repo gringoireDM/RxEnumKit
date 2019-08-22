@@ -203,4 +203,131 @@ class MapTests: XCTestCase {
         
         XCTAssertEqual(results.events, expected)
     }
+    
+    
+    func testItCanMapAnonymousEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(Int.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .map(case: MockEnum.withAnonymousAssociatedValue, Int.init)
+            .filter { $0 != nil }.map { $0! }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<Int>>] = [
+            .next(100, 100),
+            .next(200, 200),
+            .next(400, 400)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanMapNamedEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(Int.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .map(case: MockEnum.withNamedAssociatedValue, Int.init)
+            .filter { $0 != nil }.map { $0! }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<Int>>] = [
+            .next(300, 100)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanMapNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(String.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .map(case: MockEnum.noAssociatedValue) { "Frank Sinatra" }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(300, "Frank Sinatra"),
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanCompactMapAnonymousEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(Int.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .compactMap(case: MockEnum.withAnonymousAssociatedValue, Int.init)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<Int>>] = [
+            .next(100, 100),
+            .next(200, 200),
+            .next(400, 400)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanCompactMapNamedEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(Int.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .compactMap(case: MockEnum.withNamedAssociatedValue, Int.init)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<Int>>] = [
+            .next(300, 100)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanCompactMapNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(String.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .compactMap(case: MockEnum.noAssociatedValue) { "Frank Sinatra" }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(300, "Frank Sinatra"),
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
 }

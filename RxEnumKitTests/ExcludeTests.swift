@@ -67,4 +67,58 @@ class ExcludeTests: XCTestCase {
         XCTAssertEqual(results.events, expected)
     }
 
+    
+    func testItCanExcludeNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
+            .next(100, MockEnum.noAssociatedValue),
+            .next(200, MockEnum.noAssociatedValue),
+            .next(300, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(400, MockEnum.withAnonymousAssociatedValue("400")),
+            .next(300, MockEnum.noAssociatedValue)
+            ])
+        let results = scheduler.createObserver(MockEnum.self)
+        
+        events.asDriver(onErrorRecover: { _ in .empty() })
+            .exclude(case: MockEnum.noAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<MockEnum>>] = [
+            .next(300, .withNamedAssociatedValue(value: "100")),
+            .next(400, .withAnonymousAssociatedValue("400"))
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanExcludeWithAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let events: TestableObservable<CaseAccessible> = scheduler.createHotObservable([
+            .next(100, MockEnum.noAssociatedValue),
+            .next(200, MockEnum.noAssociatedValue),
+            .next(300, MockEnum.withNamedAssociatedValue(value: "100")),
+            .next(400, MockEnum.withAnonymousAssociatedValue("400")),
+            .next(500, MockEnum.noAssociatedValue)
+            ])
+        let results = scheduler.createObserver(MockEnum.self)
+        
+        events.asDriver(onErrorRecover: { _ in .empty() })
+            .exclude(case: MockEnum.withNamedAssociatedValue)
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<MockEnum>>] = [
+            .next(100, MockEnum.noAssociatedValue),
+            .next(200, MockEnum.noAssociatedValue),
+            .next(400, .withAnonymousAssociatedValue("400")),
+            .next(500, MockEnum.noAssociatedValue)
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
 }
