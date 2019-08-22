@@ -10,7 +10,7 @@ import RxCocoa
 import RxSwift
 import EnumKit
 
-public extension SharedSequence where Element: CaseAccessible {
+public extension SharedSequenceConvertibleType where Element: CaseAccessible {
     /// Filters the elements of an observable sequence based on a specific case.
     /// - parameter case: An enum case to test each source element for a matching condition.
     /// - returns: An observable sequence that contains enum cases from the input sequence that satisfy the case condition.
@@ -174,7 +174,7 @@ public extension SharedSequence where Element: CaseAccessible {
 }
 
 
-public extension SharedSequence where Element == CaseAccessible {
+public extension SharedSequenceConvertibleType where Element == CaseAccessible {
     private func model<T: CaseAccessible>(_ type: T.Type) -> SharedSequence<SharingStrategy, T> {
         return asObservable().compactMap { $0 as? T }
             .asSharedSequence(onErrorRecover: { _ in .empty() })
