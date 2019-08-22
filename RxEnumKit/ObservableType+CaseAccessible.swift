@@ -16,7 +16,7 @@ public extension ObservableType where Element: CaseAccessible {
     /// - parameter case: An enum case to test each source element for a matching condition.
     /// - returns: An observable sequence that contains enum cases from the input sequence that satisfy the case condition.
     func filter<AssociatedValue>(case pattern: @escaping (AssociatedValue) -> Element) -> Observable<Element> {
-        return filter { $0 ~= pattern }.debug("MATCH")
+        return filter { $0 ~= pattern }
     }
     
     /// Filters the elements of an observable sequence based on a specific case, excluding it from the stream.
