@@ -330,4 +330,67 @@ class MapTests: XCTestCase {
         
         XCTAssertEqual(results.events, expected)
     }
+    
+    func testItCanFlatMapAnonymousEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(String.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .flatMap(case: MockEnum.withAnonymousAssociatedValue) { .just($0) }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(100, "100"),
+            .next(200, "200"),
+            .next(400, "400"),
+            .next(450, "David Bowie")
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanFlatMapNamedEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(String.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .flatMap(case: MockEnum.withNamedAssociatedValue) { .just($0) }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(300, "100")
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
+    
+    func testItCanFlatMapNoAssociatedValueEventsDriver() {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observable = scheduler.createHotObservable(events)
+        
+        let results = scheduler.createObserver(String.self)
+        
+        observable.asDriver(onErrorRecover: { _ in .empty() })
+            .flatMap(case: MockEnum.noAssociatedValue) { .just("Frank Sinatra") }
+            .drive(results)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        let expected: [Recorded<Event<String>>] = [
+            .next(300, "Frank Sinatra"),
+        ]
+        
+        XCTAssertEqual(results.events, expected)
+    }
 }
