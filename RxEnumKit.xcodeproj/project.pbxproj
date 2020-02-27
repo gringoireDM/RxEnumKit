@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C12E831D98DB8420C04484 /* Pods_RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5807D4E1AFDC69D8DFC137 /* Pods_RxEnumKit.framework */; };
 		5080EC4D230E8CCE00D04927 /* RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5080EC43230E8CCE00D04927 /* RxEnumKit.framework */; };
 		5080EC54230E8CCE00D04927 /* RxEnumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5080EC46230E8CCE00D04927 /* RxEnumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5080EC5E230E8D4F00D04927 /* ObservableType+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080EC5D230E8D4F00D04927 /* ObservableType+CaseAccessible.swift */; };
@@ -17,7 +16,8 @@
 		5080EC68230E8D7600D04927 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080EC64230E8D7600D04927 /* MapTests.swift */; };
 		5080EC69230E8D7600D04927 /* CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080EC65230E8D7600D04927 /* CaptureTests.swift */; };
 		5080EC6B230E993D00D04927 /* SharedSequence+CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080EC6A230E993D00D04927 /* SharedSequence+CaseAccessible.swift */; };
-		7182D277CC2B8F5CED7FAE90 /* Pods_RxEnumKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1566C12417883D8EE11EAC1A /* Pods_RxEnumKitTests.framework */; };
+		792851C276E4D8D43ABB34CD /* Pods_RxEnumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01709B50A4EE0D3F86B2657 /* Pods_RxEnumKit.framework */; };
+		911B76F97995F77AA76A8D61 /* Pods_RxEnumKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA40AE4FFC3AA5DD576D8F35 /* Pods_RxEnumKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05B771C72AADA73E502B4A84 /* Pods-RxEnumKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		1566C12417883D8EE11EAC1A /* Pods_RxEnumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A63DD6D885516223626A472 /* Pods-RxEnumKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.release.xcconfig"; sourceTree = "<group>"; };
+		03B077EBA7710407BC7CDDE7 /* Pods-RxEnumKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.release.xcconfig"; sourceTree = "<group>"; };
+		0583BDC7DB9D175724E85CC7 /* Pods-RxEnumKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		5080EC43230E8CCE00D04927 /* RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5080EC46230E8CCE00D04927 /* RxEnumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxEnumKit.h; sourceTree = "<group>"; };
 		5080EC47230E8CCE00D04927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,9 +48,10 @@
 		5080EC6C230ED28500D04927 /* RxEnumKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RxEnumKit.podspec; sourceTree = "<group>"; };
 		5080EC6D230ED28E00D04927 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5080EC6E230ED29B00D04927 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		6C693E9BCFACCF01CFF2924F /* Pods-RxEnumKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.debug.xcconfig"; sourceTree = "<group>"; };
-		8C5807D4E1AFDC69D8DFC137 /* Pods_RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C82D450F6EEF8FBE10A972 /* Pods-RxEnumKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6833D862ACB46636B4C8485B /* Pods-RxEnumKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB7501C76F8666E7E2B5DEE /* Pods-RxEnumKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.debug.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D01709B50A4EE0D3F86B2657 /* Pods_RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA40AE4FFC3AA5DD576D8F35 /* Pods_RxEnumKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEnumKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C12E831D98DB8420C04484 /* Pods_RxEnumKit.framework in Frameworks */,
+				792851C276E4D8D43ABB34CD /* Pods_RxEnumKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5080EC4D230E8CCE00D04927 /* RxEnumKit.framework in Frameworks */,
-				7182D277CC2B8F5CED7FAE90 /* Pods_RxEnumKitTests.framework in Frameworks */,
+				911B76F97995F77AA76A8D61 /* Pods_RxEnumKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +78,10 @@
 		454C3B6FDA0AF89A432A9889 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C693E9BCFACCF01CFF2924F /* Pods-RxEnumKit.debug.xcconfig */,
-				2A63DD6D885516223626A472 /* Pods-RxEnumKit.release.xcconfig */,
-				B4C82D450F6EEF8FBE10A972 /* Pods-RxEnumKitTests.debug.xcconfig */,
-				05B771C72AADA73E502B4A84 /* Pods-RxEnumKitTests.release.xcconfig */,
+				6EB7501C76F8666E7E2B5DEE /* Pods-RxEnumKit.debug.xcconfig */,
+				03B077EBA7710407BC7CDDE7 /* Pods-RxEnumKit.release.xcconfig */,
+				6833D862ACB46636B4C8485B /* Pods-RxEnumKitTests.debug.xcconfig */,
+				0583BDC7DB9D175724E85CC7 /* Pods-RxEnumKitTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 				5080EC50230E8CCE00D04927 /* RxEnumKitTests */,
 				5080EC44230E8CCE00D04927 /* Products */,
 				454C3B6FDA0AF89A432A9889 /* Pods */,
-				BD14E23FBF773AC81E6A087D /* Frameworks */,
+				97291C91B4AA35C49A37511D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,11 +141,11 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		BD14E23FBF773AC81E6A087D /* Frameworks */ = {
+		97291C91B4AA35C49A37511D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C5807D4E1AFDC69D8DFC137 /* Pods_RxEnumKit.framework */,
-				1566C12417883D8EE11EAC1A /* Pods_RxEnumKitTests.framework */,
+				D01709B50A4EE0D3F86B2657 /* Pods_RxEnumKit.framework */,
+				DA40AE4FFC3AA5DD576D8F35 /* Pods_RxEnumKitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5080EC57230E8CCE00D04927 /* Build configuration list for PBXNativeTarget "RxEnumKit" */;
 			buildPhases = (
-				E32ABADC0EAD58FD2FE64A5A /* [CP] Check Pods Manifest.lock */,
+				48DADAE92980B1937974D5B5 /* [CP] Check Pods Manifest.lock */,
 				5080EC3E230E8CCD00D04927 /* Headers */,
 				5080EC3F230E8CCD00D04927 /* Sources */,
 				5080EC40230E8CCD00D04927 /* Frameworks */,
@@ -187,11 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5080EC5A230E8CCE00D04927 /* Build configuration list for PBXNativeTarget "RxEnumKitTests" */;
 			buildPhases = (
-				7CD2F3E5D1A27CE3ADEA1DCA /* [CP] Check Pods Manifest.lock */,
+				F9E7B17A15C2FAFFF0908872 /* [CP] Check Pods Manifest.lock */,
 				5080EC48230E8CCE00D04927 /* Sources */,
 				5080EC49230E8CCE00D04927 /* Frameworks */,
 				5080EC4A230E8CCE00D04927 /* Resources */,
-				B22740257AFA4E6365EF5612 /* [CP] Embed Pods Frameworks */,
+				EB1C9D79650223870A008DB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,59 +258,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7CD2F3E5D1A27CE3ADEA1DCA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxEnumKitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B22740257AFA4E6365EF5612 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EnumKit/EnumKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EnumKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E32ABADC0EAD58FD2FE64A5A /* [CP] Check Pods Manifest.lock */ = {
+		48DADAE92980B1937974D5B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,6 +274,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxEnumKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1C9D79650223870A008DB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9E7B17A15C2FAFFF0908872 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxEnumKitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,7 +478,7 @@
 		};
 		5080EC58230E8CCE00D04927 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C693E9BCFACCF01CFF2924F /* Pods-RxEnumKit.debug.xcconfig */;
+			baseConfigurationReference = 6EB7501C76F8666E7E2B5DEE /* Pods-RxEnumKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -520,7 +507,7 @@
 		};
 		5080EC59230E8CCE00D04927 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A63DD6D885516223626A472 /* Pods-RxEnumKit.release.xcconfig */;
+			baseConfigurationReference = 03B077EBA7710407BC7CDDE7 /* Pods-RxEnumKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -548,7 +535,7 @@
 		};
 		5080EC5B230E8CCE00D04927 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4C82D450F6EEF8FBE10A972 /* Pods-RxEnumKitTests.debug.xcconfig */;
+			baseConfigurationReference = 6833D862ACB46636B4C8485B /* Pods-RxEnumKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -569,7 +556,7 @@
 		};
 		5080EC5C230E8CCE00D04927 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05B771C72AADA73E502B4A84 /* Pods-RxEnumKitTests.release.xcconfig */;
+			baseConfigurationReference = 0583BDC7DB9D175724E85CC7 /* Pods-RxEnumKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
