@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		03B077EBA7710407BC7CDDE7 /* Pods-RxEnumKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKit.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKit/Pods-RxEnumKit.release.xcconfig"; sourceTree = "<group>"; };
 		0583BDC7DB9D175724E85CC7 /* Pods-RxEnumKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEnumKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxEnumKitTests/Pods-RxEnumKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		50612E1D24075CEC003E6B67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		5080EC43230E8CCE00D04927 /* RxEnumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxEnumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5080EC46230E8CCE00D04927 /* RxEnumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxEnumKit.h; sourceTree = "<group>"; };
 		5080EC47230E8CCE00D04927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5080EC6E230ED29B00D04927 /* Package.swift */,
+				50612E1D24075CEC003E6B67 /* .travis.yml */,
 				5080EC6C230ED28500D04927 /* RxEnumKit.podspec */,
 				5080EC6D230ED28E00D04927 /* README.md */,
 				5080EC45230E8CCE00D04927 /* RxEnumKit */,
