@@ -4,7 +4,7 @@ osx_image: xcode11
 podfile: ./Podfile
 xcode_workspace: ./RxEnumKit.xcworkspace
 xcode_scheme: RxEnumKit
-xcode_destination: platform=iOS Simulator,OS=13,name=iPhone 11
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
 
 before_install:
     - gem install cocoapods
