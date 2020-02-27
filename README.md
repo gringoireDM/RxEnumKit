@@ -47,8 +47,8 @@ observable.map(case: MyEvent.eventB, String.init)
 
 ## Requirements
 
-* Xcode 10.2
-* Swift 5.0
+* Xcode 11
+* Swift 5.1
 
 
 ## Installation
@@ -62,7 +62,7 @@ RxEnumKit offers [cocoapods](https://cocoapods.org) and [swiftPM](https://swift.
 use_frameworks!
 
 target 'YOUR_TARGET_NAME' do
-    pod 'RxEnumKit', '~> 1.0.1'
+    pod 'RxEnumKit', '~> 1.0.2'
 end
 ```
 
@@ -84,7 +84,7 @@ import PackageDescription
 let package = Package(
   name: "YourProjectName",
   dependencies: [
-    .package(url: "https://github.com/gringoireDM/RxEnumKit.git", from: "1.0.1")
+    .package(url: "https://github.com/gringoireDM/RxEnumKit.git", from: "1.0.2")
   ],
   targets: [
     .target(name: "YourProjectName", dependencies: ["RxEnumKit"])
