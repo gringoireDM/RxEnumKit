@@ -3,7 +3,7 @@ use_frameworks!
 inhibit_all_warnings! # supresses pods project warnings
 
 def common
-  pod 'RxCocoa', '~>5.0.0'
+  pod 'RxCocoa', '~>5.0'
   pod 'EnumKit'
 end
 

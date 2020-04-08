@@ -1,17 +1,17 @@
 PODS:
-  - EnumKit (1.1.1)
-  - RxCocoa (5.0.1):
+  - EnumKit (1.1.2)
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxSwift (5.1.1)
   - RxTest (5.0.1):
     - RxSwift (~> 5)
 
 DEPENDENCIES:
   - EnumKit
-  - RxCocoa (~> 5.0.0)
+  - RxCocoa (~> 5.0)
   - RxTest (~> 5.0.0)
 
 SPEC REPOS:
@@ -23,12 +23,12 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
-  EnumKit: b49db845ff6de43d55b58214fb89e676edc349fa
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  EnumKit: d44634a9755c252cd0b52c8ec5e8e97160895c6b
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
 
-PODFILE CHECKSUM: d1bdaf6ffdc0ea306091b73aa8d24567501f404f
+PODFILE CHECKSUM: e864cf083b71986b264b1a9c1bc5b21faf917ab2
 
 COCOAPODS: 1.9.0

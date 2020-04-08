@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.version = "1.0.2"
+    s.version = "1.0.3"
     s.ios.deployment_target = '10.0'
     s.osx.deployment_target = '10.10'
     s.name = "RxEnumKit"
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
         :tag => s.version.to_s
     }
     
-	s.dependency 'EnumKit', '~>1.1.1'
-	s.dependency 'RxCocoa', '~>5.0.0'
+	s.dependency 'EnumKit', '~>1.1'
+	s.dependency 'RxCocoa', '~>5.0'
 	
     s.source_files = "RxEnumKit/**/*.swift"
 end
