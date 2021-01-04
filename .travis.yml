@@ -1,6 +1,6 @@
 os: osx
 language: objective-c
-osx_image: xcode11
+osx_image: xcode12
 podfile: ./Podfile
 xcode_workspace: ./RxEnumKit.xcworkspace
 xcode_scheme: RxEnumKit
